@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand New - Shopping Cart</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+/* Header */
+header{
+    background:#131921;
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    color:#ff9900;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+}
+
+.cart{
+    flex:3;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+}
+
+.summary{
+    flex:1;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    height:fit-content;
+}
+
+.product{
+    display:flex;
+    gap:20px;
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
+}
+
+.product img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+}
+
+.details h2{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#B12704;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+button{
+    background:#FFD814;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#F7CA00;
+}
+
+.summary h2{
+    margin-bottom:20px;
+}
+
+.summary p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.checkout{
+    width:100%;
+    margin-top:20px;
+}
+
+footer{
+    margin-top:40px;
+    background:#232F3E;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Brand New</div>
+
+<nav>
+<a href="http://127.0.0.1:3000/home.html">Home</a>
+<a href="http://127.0.0.1:3000/shop.html">Shop</a>
+<a href="#">Orders</a>
+<a href="#">Cart</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="cart">
+
+<h1>Your Shopping Cart</h1>
+
+<div class="product">
+
+<img src="images (71).jpeg" alt="">
+
+<div class="details">
+
+<h2>Ladies bags</h2>
+
+<p class="price">$49.99</p>
+
+<p>Quantity: 1</p>
+
+<button>Remove</button>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="images (8).jpeg" alt="">
+
+<div class="details">
+
+<h2>Ladies Clothes </h2>
+
+<p class="price">$89.99</p>
+
+<p>Quantity: 1</p>
+
+<button>Remove</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="summary">
+
+<h2>Order Summary</h2>
+
+<p>Subtotal: <strong>$139.98</strong></p>
+
+<p>Shipping: <strong>Free</strong></p>
+
+<p>Total: <strong>$139.98</strong></p>
+
+<button class="checkout">
+Proceed to Checkout
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Brand New Store. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

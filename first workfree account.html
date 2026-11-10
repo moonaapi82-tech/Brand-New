@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a Free Business Account</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5a2d0c, #a0522d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+input:focus {
+    border-color: brown;
+    box-shadow: 0 0 8px rgba(165,42,42,.3);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: brown;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #6b2525;
+    transform: translateY(-2px);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create a Free Business Account</h2>
+
+<form action="login.html" method="get">
+
+    <input type="text" name="businessName" placeholder="Business Name" required>
+
+    <input type="text" name="ownerName" placeholder="Owner Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <input type="text" name="address" placeholder="Business Address" required>
+
+    <input type="password" name="password" placeholder="Create Password" required>
+
+    <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+    <button type="submit">Create Account</button>
+
+</form>
+
+<p>
+    Already have an account?
+    <a href="sign.html">Sign In</a>
+</p>
+
+</div>
+
+</body>
+</html>

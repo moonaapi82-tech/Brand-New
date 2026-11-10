@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand New Store</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Header */
+header{
+    background:#131921;
+    color:#fff;
+}
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+    gap:20px;
+}
+
+.logo{
+    font-size:32px;
+    color:#ff9900;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+    max-width:700px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+.search-box button{
+    width:60px;
+    border:none;
+    background:#febd69;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.right-menu{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.right-menu a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.cart{
+    font-size:24px;
+}
+
+/* Navigation */
+
+.nav{
+    background:#232f3e;
+}
+
+.nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.nav li a{
+    display:block;
+    color:white;
+    padding:14px 18px;
+    text-decoration:none;
+}
+
+.nav li a:hover{
+    background:#37475a;
+}
+
+/* Banner */
+
+.banner{
+    width:100%;
+    height:450px;
+    background:url("banner1.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner h1{
+    color:white;
+    font-size:60px;
+    background:rgba(0,0,0,.5);
+    padding:20px 40px;
+    border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="top-bar">
+
+<a href="#" class="logo">Brand New</a>
+
+<div class="search-box">
+<input type="text" placeholder="Search products...">
+<button><i class="fa fa-search"></i></button>
+</div>
+
+<div class="right-menu">
+<a href="#">Sign In</a>
+<a href="#">Orders</a>
+<a href="#">Wishlist</a>
+<a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+</div>
+
+</div>
+
+<nav class="nav">
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Today's Deals</a></li>
+<li><a href="#">Electronics</a></li>
+<li><a href="#">Fashion</a></li>
+<li><a href="#">Beauty</a></li>
+<li><a href="#">Books</a></li>
+<li><a href="#">Sports</a></li>
+<li><a href="#">Home & Kitchen</a></li>
+<li><a href="#">Gift Cards</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<section class="banner">
+<h1>Welcome to Brand New Store</h1>
+</section>

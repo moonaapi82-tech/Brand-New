@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+
+    <style>
+        body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:#ff4d4d;
+    font-size:24px;
+    font-weight:700;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#6a11cb,#2575fc);
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+        }
+
+        h1{
+            text-align:center;
+            padding:20px;
+            background:#333;
+            color:#fff;
+            margin:0;
+        }
+
+        .products{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            padding:30px;
+        }
+
+        .card{
+            background:#fff;
+            width:250px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,.2);
+            text-align:center;
+            overflow:hidden;
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0 10px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        button{
+            margin:15px;
+            padding:10px 20px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Womens Cloths</h1>
+
+<div class="products">
+
+    <div class="card">
+        <img src="women1.jpeg" alt="Product">
+        <h3>Ladies Style</h3>
+        <p class="price">$25</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="women2.jpeg" alt="Product">
+        <h3>Modren Style</h3>
+        <p class="price">$60</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="women4.jpeg" alt="Product">
+        <h3>Home style</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+        <div class="card">
+        <img src="women5.jpeg" alt="Product">
+        <h3>Limited colths</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+    
+    
+    <div class="card">
+        <img src="women6.jpeg" alt="Product">
+        <h3>Ladies Choice</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+    <div class="card">
+        <img src="women7.jpeg" alt="Product">
+        <h3>ladies work</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+    <div class="card">
+        <img src="women8.jpeg" alt="Product">
+        <h3>outstanding ladies</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+
+    <div class="card">
+        <img src="women9.jpeg" alt="Product">
+        <h3>ladies price</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+    <div class="card">
+        <img src="women10.jpeg" alt="Product">
+        <h3>in sale with style</h3>
+        <p class="price">$120</p>
+        <button>Add to Cart</button>
+    </div>
+
+</body>
+</html>

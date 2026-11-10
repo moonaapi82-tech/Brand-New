@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand New Store</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+    .user-profile{
+    background:#232f3e;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+}
+    /* Product Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 10px;
+    font-size:22px;
+}
+
+.card p{
+    color:#ff9900;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.card button{
+    background:#131921;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    margin-bottom:20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card button:hover{
+    background:#ff9900;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    background:#131921;
+    padding:15px 40px;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+/* Logo */
+.logo{
+    color:#ff9900;
+    font-size:30px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/* Search Box */
+.search-box{
+    flex:1;
+    display:flex;
+    max-width:650px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+.search-box button{
+    width:55px;
+    border:none;
+    background:#ff9900;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Menu */
+.menu{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#ff9900;
+}
+
+/* Cart */
+.cart{
+    font-size:22px;
+}
+
+/* Categories */
+.categories{
+    background:#232f3e;
+    padding:12px 40px;
+}
+
+.categories ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.categories a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.categories a:hover{
+    color:#ff9900;
+}
+.hero img{
+    width:400px;      /* Apni marzi se 600px, 700px, 800px kar sakte hain */
+    height:600px;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border-radius:20px;
+}
+
+.hero{
+    width:100%;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:#f5f5f5;
+    padding:40px 20px;
+}
+
+.hero img{
+    width: 100%px;
+    max: width 100px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+.card h3{
+    margin:15px 0 10px;
+    font-size:22px;
+}
+
+.card p{
+    color:#ff9900;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.card button{
+    background:#131921;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    margin-bottom:20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card button:hover{
+    background:#ff9900;
+}
+.hero img{
+    width: 100%px;
+    max: width 100px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.hero h4{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+.card h4{
+    margin:15px 0 10px;
+    font-size:22px;
+}
+
+.card p{
+    color:#ff9900;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.card button{
+    background:#131921;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    margin-bottom:20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card button:hover{
+    background:#ff9900;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="navbar">
+
+<a href="#" class="logo">Brand New</a>
+
+<div class="search-box">
+<input type="text" placeholder="Search products...">
+<button><i class="fas fa-search"></i></button>
+</div>
+
+<div class="menu">
+<div class="user-profile">
+    👤 <strong>Mehmona Jabeen</strong>
+</div>
+<a href="http://127.0.0.1:3008/order.html">Orders</a>
+<a href="#">Wishlist</a>
+<a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+</div>
+
+</div>
+
+</header>
+
+<nav class="categories">
+<ul>
+ <li><a href="#">All</a></li>   
+<li><a href="#">Home</a></li>
+<li><a href="http://127.0.0.1:3008/shop.html">Shop</a></li>
+<li><a href="#">Deals</a></li>
+<li><a href="#">New Arrivals</a></li>
+<li><a href="#">Best Sellers</a></li>
+<li><a href="#">Fashion</a></li>
+<li><a href="#">Electronics</a></li>
+<li><a href="#">Home & Kitchen</a></li>
+<li><a href="#">Beauty</a></li>
+<li><a href="#">Books</a></li>
+<li><a href="#">Gift Cards</a></li>
+<li><a href="#">Sell</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+    <img src="Brand New.png" alt="Brand New Site">
+    <h1>Welcome to Brand New</h1>
+<p>Discover the Best Deals Every Day</p>
+<button>Shop Now</button>
+</section>
+<section class="grid">
+
+    
+    <div class="card">
+        <img src="brand3.jpeg" alt="Digitals bags">
+        <h3>Wireless Headphones</h3>
+        <p>$49.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="brand4.jpeg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>$89.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="brand5.jpeg" alt="Running Shoes">
+        <h3>Running Shoes</h3>
+        <p>$69.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="brand6.jpeg" alt="Backpack">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="card">
+        <img src="brand7.jpeg" alt=" shirt">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand8.jpeg" alt="botlas">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+          </div>
+
+     <div class="card">
+        <img src="brand9.jpeg" alt="laides bags">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+</div>
+
+     <div class="card">
+        <img src="brand10.jpeg" alt="new bag">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand11.jpeg" alt="">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand12.jpeg" alt="laides bags">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand13.jpeg" alt="laides bags">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (5).jpeg" alt="laides bags">
+        <h3>Golde rings</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="image.100000.jpeg" alt="laides bags">
+        <h3>Eyes GLassess</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand16.jpeg" alt="laides bags">
+        <h3>Ladies bag </h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="brand17.jpeg" alt="laides bags">
+        <h3>Ladie Heels</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="image 10000.jpeg" alt="laides bags">
+        <h3> Brand New Glassess</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (100).jpeg" alt="laides bags">
+        <h3>Travel Bottles</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images - 2026-07-03T212931.861.jpeg" alt="laides bags">
+        <h3>Classi Tissues</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (2).jpeg" alt="laides bags">
+        <h3>These Tops</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (1).jpeg" alt="laides bags">
+        <h3>Ladies Dress</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (38).jpeg" alt="laides bags">
+        <h3>Wallet For Man</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (26).jpeg" alt="laides bags">
+        <h3>Water prove Watch</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (10).jpeg" alt="laides bags">
+        <h3>Brand new Shirt</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        </div>
+
+     <div class="card">
+        <img src="images (17).jpeg" alt="lamited additional Watch">
+        <h3>Limited watch</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+        
+
+
+</section>
+
+</body>
+</html>

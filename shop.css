@@ -1,0 +1,301 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Top Header */
+
+.top-header{
+    background:#1f2937;
+    padding:15px 30px;
+}
+
+.left-menu{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.left-menu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.left-menu i{
+    color:#fff;
+    font-size:22px;
+}
+
+/* Purple Header */
+
+.haul-header{
+    background:linear-gradient(90deg,#6d28d9,#7c3aed,#5b21b6);
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+    flex-wrap:wrap;
+}
+
+.haul-logo h1{
+    font-size:45px;
+    font-weight:bold;
+}
+
+.haul-header nav{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.haul-header nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    transition:.3s;
+}
+
+.haul-header nav a:hover{
+    color:#ffe600;
+}
+
+/* Shipping Box */
+
+.shipping{
+    background:#b3ecff;
+    color:#000;
+    padding:12px 25px;
+    border-radius:40px;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    position:bottom;
+    width:100%;
+    height:520px;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.hero-text{
+    position: bottom;
+    top:50%;
+    left:80px;
+    transform:translateY(-50%);
+    color:#fff;
+}
+
+.hero-text h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:25px;
+    margin-bottom:25px;
+}
+
+.hero-text button{
+    background:#00d26a;
+    color:#fff;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* Slider Buttons */
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:45px;
+    color:#fff;
+    border:none;
+    background:rgba(0,0,0,.3);
+    width:60px;
+    height:60px;
+    cursor:pointer;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+/* Title */
+
+.title{
+    background:#6d28d9;
+    color:#fff;
+    padding:25px;
+}
+
+.title h2{
+    font-size:42px;
+}
+
+/* Products */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    font-size:22px;
+}
+
+.card p{
+    padding:0 15px;
+    color:#555;
+}
+
+.price{
+    color:#e60023;
+    font-size:28px;
+    font-weight:bold;
+    padding:15px;
+}
+
+.card button{
+    width:90%;
+    margin:15px;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:#ffd814;
+    cursor:pointer;
+    font-size:17px;
+}
+
+.card button:hover{
+    background:#f7ca00;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.left-menu{
+    flex-wrap:wrap;
+}
+
+.haul-header{
+    text-align:center;
+}
+
+.haul-header nav{
+    justify-content:center;
+}
+
+.hero-text{
+    left:20px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero{
+    height:350px;
+}
+
+.hero img{
+    height:350px;
+}
+
+}
+.hero{
+    position:relative;
+    width:100%;
+    height:550px;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    color:white;
+    z-index:10;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,.5);
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:28px;
+    cursor:pointer;
+    z-index:20;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}

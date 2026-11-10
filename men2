@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    hero img{
+    width: 100%px;
+    max: width 10px;
+    height:1050px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+.hero h3{
+    margin:15px 0 10px;
+    font-size:22px;
+}
+
+.hero p{
+    color:#ff9900;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+</style>    
+<Section>
+<div class="hero">
+
+  <div class="hero">
+    <img src="man2.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Men T-Shirt</h3>
+      <p class="price">$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <img src="men3.jpeg" alt="">
+
+    <div class="info">
+      <h3>Smart Watch</h3>
+      <p class="price">$89.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class="hero">
+    <img src="men5.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="hero">
+    <img src="men6.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="hero">
+    <img src="men7.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="hero">
+    <img src="men8.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="hero">
+    <img src="men9.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+ <div class="hero">
+    <img src="men10.jpeg" alt="">
+
+    <div class="hero">
+      <h3>Digital Bag</h3>
+      <p class="price">$69.99</p>
+      <button>Add to Cart</button>
+    </div>
+    </section>
+
+</body>
+</html>
